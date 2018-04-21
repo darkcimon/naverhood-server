@@ -1,7 +1,8 @@
 # 스키마 구조
 ## 로그인 유저
 var UserSchema   = new Schema({
-    deviceId:String(required),
+    email:String(required),
+	password: String,
 	name: String,
 	board: List<BoardSchema>
 });
